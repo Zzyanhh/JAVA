@@ -1,0 +1,61 @@
+zzyanhh
+win+r打开DOS窗口
+exit 退出   cls 清屏   选中右键复制内容
+dir xxx 列出当前目录下所有文件的子文件/目录
+cd xxx （change directory）
+cd ..   回到上一级目录
+cd \   直接回到根目录
+切换盘符：c: d: ...
+
+JDK,JAVA开发必须用到的工具包
+
+JAVASE 标准版   ！！！
+JAVAEE 企业版  ！
+JAVAME 微型版
+
+JAVA虚拟机，JVM，实现JAVA跨平台
+
+先新建java拓展名文件
+JAV程序运行有两个重要阶段
+编译阶段-检查JAVA源文件 .java是否符合JAVA语法，符合则生成正常的字节码文件 .class
+         .class不是纯粹的二进制，无法直接在操作系统上运行
+	 需要用JDK中自带的javac.exe命令进行java程序编译
+	 DOS窗口，javac 路径\java源文件
+	 一个.java可生成多个.class
+	 .class是最终要执行的文件，删除.java不影响，一般不删除，.class结果由.java决定
+	 编译结束，.class可拷贝到其他系统运行
+运行阶段-DOS窗口输入java A，java.exe会启动JVM，JVM会启动类加载器classLoader,classLoader
+	会在硬盘上找到该字节码文件装载到JVM。JVM将.class文件解释成二进制，操作系统执行二进制与底层
+	硬件交互。
+	A.class A为类名
+	JDK中除javac.exe,还有java.exe
+	DOS窗口，java 类名
+
+JDK > JRE > JVM
+jdk/bin 该目录存放了许多命令
+
+ipconfig命令，查看ip地址
+搜索命令，当前目录无，一般从环境变量PATH路径搜索（计算机属性，高级设置）
+路径改cmd敲回车，DOS窗口从当前路径出发
+
+java注释和c类似
+特殊：
+/**
+*   javadoc注释
+*   javadoc注释
+*   javadoc注释
+*   javadoc注释
+*   javadoc注释
+*/
+该种注释会被javadoc.exe提取生成帮助文档
+
+一个源文件可定义多个class
+public的class不是必须的
+一个class会生成一个字节码文件
+每一个class都可以编写main方法设定程序入口
+
+方法体内，局部变量
+方法体外，成员变量
+
+整数型：byte
+布尔型：boolean
